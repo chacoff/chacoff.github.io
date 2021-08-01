@@ -128,3 +128,8 @@ footer p,
 footer a {
     font-size: 13px;
 }
+
+.galrow {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
