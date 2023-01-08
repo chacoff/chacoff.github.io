@@ -1479,7 +1479,7 @@ input, select, textarea {
 	form textarea {
 		-webkit-appearance: none;
 		border: 0;
-		background: #f4f4f4;
+		background: #1a1712;
 		padding: 0.75em;
 		width: 100%;
 		-moz-transition: background-color .25s ease-in-out;
@@ -1493,7 +1493,7 @@ input, select, textarea {
 		form input[type="password"]:focus,
 		form select:focus,
 		form textarea:focus {
-			background: #f8f8f8;
+			background: #2f2920;
 		}
 
 	form input[type="text"],
@@ -1602,7 +1602,7 @@ input, select, textarea {
 		transition: background-color .25s ease-in-out;
 		-webkit-appearance: none;
 		display: inline-block;
-		background-color: #222222;
+		background-color: #1a1712;
 		color: #ffffff;
 		border: 0;
 		cursor: pointer;
@@ -1786,7 +1786,7 @@ input, select, textarea {
 		#nav a {
 			position: relative;
 			display: inline-block;
-			color: #ffffff;
+			color: #a5b642;
 			width: 1em;
 			height: 1em;
 			line-height: 0.9em;
@@ -1955,7 +1955,7 @@ input, select, textarea {
 		position: relative;
 		overflow: hidden;
 		width: 100%;
-		background: #ffffff;
+		background: #0c0b09;
 		box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
 		-moz-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 		-webkit-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
@@ -2057,7 +2057,7 @@ input, select, textarea {
 						height: 2.75em;
 						background: #000;
 						background: rgba(0, 0, 0, 0.75);
-						color: #ffffff;
+						color: #a5b642;
 						text-align: center;
 						line-height: 2.75em;
 						font-size: 1.5em;
