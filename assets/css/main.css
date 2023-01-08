@@ -1329,7 +1329,7 @@ input, select, textarea {
 		font-weight: 300;
 		color: #777777;
 		font-size: 20pt;
-		line-height: 1.75em;
+		line-height: 1.65em;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1380,8 +1380,9 @@ input, select, textarea {
 	}
 
 	h3, h4, h5, h6 {
-		font-size: 1.25em;
+		font-size: 0.65em;
 		letter-spacing: -0.015em;
+		line-height: 1.15em;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -1396,6 +1397,7 @@ input, select, textarea {
 
 		h3, h4, h5, h6 {
 			font-size: 1em;
+			letter-spacing: -0.015em;
 		}
 
 	}
