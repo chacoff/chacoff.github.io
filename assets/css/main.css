@@ -2228,3 +2228,24 @@ input, select, textarea {
 			color: #a5b642;
 			/* background-color: #a5b642; */ /* #ee7c22;*/
 		  }
+		
+		/* unvisited link */
+		a:link {
+			color: #f2f2f2;
+		}
+		
+		/* visited link */
+		a:visited {
+			color: #f2f2f2;
+		}
+		
+		/* mouse over link */
+		a:hover {
+			color: #a5b642;
+		}
+		
+		/* selected link */
+		a:active {
+			color: #a5b642;
+		}
+		
