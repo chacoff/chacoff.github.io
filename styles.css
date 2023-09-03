@@ -1,30 +1,37 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    transition: background-color 0.3s; /* Smooth transition for theme change */
+    box-sizing: border-box;
 }
 
+/* Apply a default font family and background color for the dark theme */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111; /* Dark background color */
+    color: #fff; /* Light text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth theme transition */
+}
+
+/* Create a container with rounded corners and shadow */
 #container {
     width: 76%;
     margin: 0 auto;
     display: flex;
-    background-color: #fff;
+    background-color: #222; /* Darker background for container */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    align-items: flex-start;
     border-radius: 10px; /* Rounded corners for the container */
     overflow: hidden; /* Clip content within rounded corners */
 }
 
+/* Style the left menu for the dark theme */
 #menu {
     width: 18%;
     background-color: #333;
     color: #fff;
     padding: 20px;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
     border-top-left-radius: 10px; /* Rounded corners for the top-left corner */
-    border-bottom-left-radius: 12px; /* Rounded corners for the bottom-left corner */
+    border-bottom-left-radius: 10px; /* Rounded corners for the bottom-left corner */
 }
 
 #menu a {
@@ -32,49 +39,45 @@ body {
     text-decoration: none;
     display: block;
     padding: 5px 0;
+    transition: background-color 0.3s; /* Smooth transition for menu links */
 }
 
 #menu a:hover {
-    background-color: #555;
+    background-color: #555; /* Darken menu links on hover */
 }
 
-#separator {
-    width: 2px;
-    background-color: #ccc; /* Color of the separator */
-}
-
+/* Create a flexible content area for the dark theme */
 #content {
-    width: 82%;
     flex: 1; /* Expand to fill remaining space */
-    padding: 18px;
-    color: #333; /* Default text color */
-    background-color: #fff; /* Background color for content */
+    padding: 20px;
+    color: #fff; /* Light text color */
+    background-color: #222; /* Darker background for content */
 }
 
-/* Dark Theme */
-body.dark {
-    background-color: #111;
-    color: #fff; /* Adjusted text color for dark theme */
+/* Light Theme - Applied when the "light" class is toggled */
+.light {
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color */
 }
 
-body.dark #menu {
-    background-color: #111;
-    color: #fff; /* Adjusted text color for dark theme */
+.light #container {
+    background-color: #fff; /* Container background color in light theme */
 }
 
-body.dark #menu a {
-    color: #fff; /* Adjusted text color for dark theme */
+.light #menu {
+    background-color: #333; /* Menu background color in light theme */
+    color: #fff; /* Menu text color in light theme */
 }
 
-body.dark #menu a:hover {
-    background-color: #333; /* Adjusted hover effect color for dark theme */
+.light #menu a {
+    color: #fff; /* Menu link text color in light theme */
 }
 
-body.dark #content {
-    color: #fff; /* Adjusted text color for dark theme */
-    background-color: #111; /* Adjusted background color for content in dark theme */
+.light #menu a:hover {
+    background-color: #555; /* Darken menu links in light theme */
 }
 
-body.dark #container {
-    background-color:  #111;
+.light #content {
+    color: #333; /* Text color in light theme */
+    background-color: #fff; /* Content background color in light theme */
 }

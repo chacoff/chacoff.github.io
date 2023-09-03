@@ -38,6 +38,6 @@ async function fetchHtmlAsText(url) {
 
 function toggleTheme() {
     const body = document.body;
-    body.classList.toggle('dark');
-    console.log('dark theme On');
+    body.classList.toggle('light');
+    console.log('dark theme Off');
 }
