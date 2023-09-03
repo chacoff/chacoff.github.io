@@ -8,8 +8,6 @@ async function loadContent(page) {
         case 'home':
             let response = await fetchHtmlAsText(`${page}.html`);
             contentDiv.innerHTML = response;
-            console.log(response);
-            // contentDiv.innerHTML = `<object type="text/html" data="${page}.html" ></object>`;
             break;
 
         case 'background':
