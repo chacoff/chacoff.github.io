@@ -17,6 +17,7 @@ body {
     margin: 22px auto 0;
     display: flex;
     background-color: #111; /* Darker background for container */
+    transition: background-color 0.3s; /* Smooth transition for menu links */
 }
 
 
@@ -31,6 +32,7 @@ body {
     border-radius: 9px; /* Rounded corners for the container */
     overflow: hidden; /* Clip content within rounded corners */
     overflow-y: auto;
+    transition: background-color 0.3s; /* Smooth transition for menu links */
 }
 
 #menu a {
@@ -38,7 +40,6 @@ body {
     text-decoration: none;
     display: block;
     padding: 5px 0;
-    transition: background-color 0.3s; /* Smooth transition for menu links */
 }
 
 #menu a:hover {
