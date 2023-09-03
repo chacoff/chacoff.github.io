@@ -60,6 +60,23 @@ body {
     overflow: hidden;
 }
 
+.image.left {
+    float: left; /* Float the image to the left */
+    margin-right: 8px; /* Add some margin to separate the image from the text */
+}
+
+.image.right {
+    float: right; /* Float the image to the left */
+    margin-right: 8px; /* Add some margin to separate the image from the text */
+}
+
+/* Clear the float to ensure the following content doesn't wrap around the floated image */
+p::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* Light Theme - Applied when the "light" class is toggled */
 .light {
     background-color: #f4f4f4; /* Light background color */
