@@ -12,15 +12,19 @@
         <div id="menu">
             <!-- h2>Menu</h2 -->
             <ul>
-                <li><a href="#" onclick="loadContent('home')"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#" onclick="loadContent('background')"><i class="fas fa-info-circle"></i> Background</a></li>
-                <li><a href="#" onclick="loadContent('hobbies')"><i class="fas fa-heart"></i> Hobbies</a></li>
-                <li><a href="#" onclick="loadContent('links')"><i class="fas fa-link"></i> Links</a></li>
-                <li><a href="#" onclick="toggleTheme()"><i class="fas fa-adjust"></i> Toggle Theme</a></li>
+                <a href="#" onclick="loadContent('home')"><i class="fas fa-home"></i> Home</a><
+                <a href="#" onclick="loadContent('background')"><i class="fas fa-info-circle"></i> Background</a>
+                <a href="#" onclick="loadContent('hobbies')"><i class="fas fa-heart"></i> Hobbies</a>
+                <a href="#" onclick="loadContent('links')"><i class="fas fa-link"></i> Links</a>
+                <a href="#" onclick="toggleTheme()"><i class="fas fa-adjust"></i> toggle Theme</a>
             </ul>
         </div>
         <div id="content">
-            <script type="text/javascript">loadContent('home')</script>
+            <script type="text/javascript">
+                document.addEventListener("DOMContentLoaded", function () {
+                loadContent('home');
+                });
+            </script>
         </div>
     </div>
 
