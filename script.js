@@ -39,5 +39,4 @@ async function fetchHtmlAsText(url) {
 function toggleTheme() {
     const body = document.body;
     body.classList.toggle('light');
-    console.log('dark theme Off');
 }
