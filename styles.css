@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s; /* Smooth transition for theme change */
+}
+
+#container {
+    width: 76%;
+    margin: 0 auto;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    align-items: flex-start;
+    border-radius: 10px; /* Rounded corners for the container */
+    overflow: hidden; /* Clip content within rounded corners */
+}
+
+#menu {
+    width: 18%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+    border-top-left-radius: 10px; /* Rounded corners for the top-left corner */
+    border-bottom-left-radius: 12px; /* Rounded corners for the bottom-left corner */
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+#menu a:hover {
+    background-color: #555;
+}
+
+#separator {
+    width: 2px;
+    background-color: #ccc; /* Color of the separator */
+}
+
+#content {
+    width: 82%;
+    flex: 1; /* Expand to fill remaining space */
+    padding: 18px;
+    color: #333; /* Default text color */
+    background-color: #fff; /* Background color for content */
+}
+
+/* Dark Theme */
+body.dark {
+    background-color: #111;
+    color: #fff; /* Adjusted text color for dark theme */
+}
+
+body.dark #menu {
+    background-color: #111;
+    color: #fff; /* Adjusted text color for dark theme */
+}
+
+body.dark #menu a {
+    color: #fff; /* Adjusted text color for dark theme */
+}
+
+body.dark #menu a:hover {
+    background-color: #333; /* Adjusted hover effect color for dark theme */
+}
+
+body.dark #content {
+    color: #fff; /* Adjusted text color for dark theme */
+    background-color: #111; /* Adjusted background color for content in dark theme */
+}
+
+body.dark #container {
+    background-color:  #111;
+}
