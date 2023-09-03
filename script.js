@@ -3,19 +3,20 @@
 async function loadContent(page) {
     const contentDiv = document.getElementById('content');
 
+    let response = await fetchHtmlAsText(`html/${page}.html`);
+
     switch (page) {
 
         case 'home':
-            let response = await fetchHtmlAsText(`${page}.html`);
             contentDiv.innerHTML = response;
             break;
 
         case 'background':
-            contentDiv.innerHTML = '<h1>Background Page</h1><p>This is the Background page content.</p>';
+            contentDiv.innerHTML = response; // '<h1>Background Page</h1><p>This is the Background page content.</p>';
             break;
 
         case 'hobbies':
-            contentDiv.innerHTML = '<h1>Hobbies Page</h1><p>This is the Hobbies page content.</p>';
+            contentDiv.innerHTML = response; // '<h1>Hobbies Page</h1><p>This is the Hobbies page content.</p>';
             break;
 
         case 'links':
