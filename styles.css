@@ -12,7 +12,6 @@ body {
     transition: background-color 0.3s, color 0.3s; /* Smooth theme transition */
 }
 
-/* Create a container with rounded corners and shadow */
 #container {
     width: 76%;
     margin: 22px auto 0;
@@ -28,7 +27,7 @@ body {
     color: #fff;
     padding: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    border-radius: 12px; /* Rounded corners for the container */
+    border-radius: 9px; /* Rounded corners for the container */
     overflow: hidden; /* Clip content within rounded corners */
 }
 
@@ -55,6 +54,9 @@ body {
     padding: 20px;
     color: #fff; /* Light text color */
     background-color: #222; /* Darker background for content */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 9px;
+    overflow: hidden;
 }
 
 /* Light Theme - Applied when the "light" class is toggled */
