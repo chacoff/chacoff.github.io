@@ -3,7 +3,15 @@
 async function loadContent(page) {
     const contentDiv = document.getElementById('content');
 
-    let response = await fetchHtmlAsText(`html/${page}.html`);
+    let response;
+
+    try {
+        response = await fetchHtmlAsText(`html/${page}.html`);
+    } catch(error){
+        console.error('error:', error);
+        response = '<h1>error 404</h1><p>page not found</p>'
+    }
+    
 
     switch (page) {
 
@@ -28,7 +36,7 @@ async function loadContent(page) {
 async function fetchHtmlAsText(url) {
     const response = await fetch(url, {
                               method: "GET",
-                              //mode: "no-cors",
+                              // mode: "no-cors",
                               credentials: "include",
                               headers: {
                                 "Accept": "text/html"
