@@ -1,18 +1,19 @@
 // J. website
 
 async function loadContent(page) {
+    
     const contentDiv = document.getElementById('content');
-
     let response;
 
     try {
         response = await fetchHtmlAsText(`html/${page}.html`);
+        
     } catch(error){
         console.error('error:', error);
         response = '<h1>error 404</h1><p>page not found</p><p>page not found</p><p>page not found</p><p>page not found</p><p>page not found</p><p>page not found</p><p>page not found</p><p>page not found</p><p>page not found</p><p>page not found</p><p>page not found</p><p>page not found</p>'
     }
     
-
+    
     switch (page) {
 
         case 'home':
