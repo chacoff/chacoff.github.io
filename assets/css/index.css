@@ -30,7 +30,7 @@ a {
 }
 
 #k {
-  animation: change 1s;
+  animation: change 2s;
 }
 
 #op {
@@ -41,8 +41,14 @@ a {
   0% {
     color: #0f0;
   }
+  25% {
+    color: #11ff00;
+  }
   50% {
-    color: #0f0;
+    color: #0080ff;
+  }
+  75% {
+    color: #0077ff;
   }
   99% {
     color: black;
