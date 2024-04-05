@@ -87,7 +87,7 @@ function replaceUrls(text) {
   var http = text.indexOf("http://");
   var space = text.indexOf(".me ", http);
 
-  if (space != -1) {
+  if (space !== -1) {
     var url = text.slice(http, space - 1);
     return text.replace(url, '<a href="' + url + '">' + url + "</a>");
   } else {
@@ -95,8 +95,8 @@ function replaceUrls(text) {
   }
 }
 
-Typer.speed = 11;
-Typer.file = "jaime.html";
+Typer.speed = 13;
+Typer.file = returnPage("jaime.html")
 Typer.init();
 
 var timer = setInterval("t();", 30);
@@ -105,5 +105,13 @@ function t() {
 
   if (Typer.index > Typer.text.length) {
     clearInterval(timer);
+  }
+}
+
+function returnPage(_page) {
+  if (_page !== null) {
+    return _page;
+  } else {
+    return "jaime.html";
   }
 }
