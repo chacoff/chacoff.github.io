@@ -1,3 +1,5 @@
+let previous_lines = 0
+
 var Typer = {
   text: "",
   accessCountimer: null,
@@ -14,6 +16,7 @@ var Typer = {
       Typer.text = data;
       Typer.text = Typer.text.slice(0, Typer.text.length - 1);
     });
+
   },
 
   content: function () {
@@ -80,6 +83,8 @@ var Typer = {
           .substring(0, cont.length - 1)
       );
     else this.write("|"); // else write it
+
+    countLines()
   },
 };
 
@@ -96,7 +101,7 @@ function replaceUrls(text) {
 }
 
 Typer.speed = 13;
-Typer.file = returnPage("jaime.html")
+Typer.file = "jaime.html"
 Typer.init();
 
 var timer = setInterval("t();", 30);
@@ -113,5 +118,24 @@ function returnPage(_page) {
     return _page;
   } else {
     return "jaime.html";
+  }
+}
+
+function countLines() {
+  var el = document.getElementById('console');
+
+  // Get total height of the content
+  var divHeight = el.offsetHeight
+
+  // object.style.lineHeight, returns the lineHeight property height of one line
+  var lineHeight = parseInt(el.style.lineHeight);
+
+  var lines = Math.round(divHeight / lineHeight);
+
+  if (lines !== previous_lines) {
+    // alert("Lines: " + lines);
+    console.log("lines: " + lines);
+    previous_lines = lines;
+    document.getElementById("k").innerText = "durrs: " + lines;
   }
 }
