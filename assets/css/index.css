@@ -57,19 +57,16 @@ a {
 
 @keyframes change {
   0% {
-    color: #0f0;
+    color: mediumvioletred;
   }
   25% {
-    color: #11ff00;
+    color: orangered;
   }
   50% {
-    color: #0080ff;
-  }
-  75% {
-    color: #0077ff;
+    color: indianred;
   }
   99% {
-    color: black;
+    color: darkred;
   }
 }
 
