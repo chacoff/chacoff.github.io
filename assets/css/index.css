@@ -1,5 +1,6 @@
 body {
-  background-color: #000;
+  background-color: #1e1f22;
+  /* counter-reset: section; */
 }
 
 #bar {
@@ -21,6 +22,13 @@ body {
   margin-top: 22px;
   font-size: 13px;
 }
+
+/*
+p::before{
+  counter-increment: section;
+  content: " " counter(section) " ";
+}
+*/
 
 a {
   color: #0bc;
