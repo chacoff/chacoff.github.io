@@ -70,22 +70,19 @@ a {
   }
 }
 
-/* Container for text and icon */
 .icon-container {
   position: relative;
   display: inline-block; /* Ensures the container only takes up as much space as necessary */
 }
 
-/* Hide the icon by default */
 .icon-container i {
   visibility: hidden;
   position: absolute;
-  top: -20px; /* Adjust as needed to position above the text */
-  left: 50%; /* Center horizontally */
+  top: -42px; /* adjust to position above the text */
+  left: 60%; /* adjust to center horizontally */
   transform: translateX(-50%); /* Adjust to center the icon */
 }
 
-/* When the container is hovered, show the icon */
 .icon-container:hover i {
   visibility: visible;
 }
