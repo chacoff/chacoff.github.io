@@ -4,13 +4,13 @@ body {
 }
 
 #bar {
-  font-family: courier, monospace;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #fff;
   max-width: 750px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #console {
@@ -33,6 +33,10 @@ p::before{
 a {
   color: #0bc;
   text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 #a {
